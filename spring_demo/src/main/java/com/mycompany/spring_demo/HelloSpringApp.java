@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.spring_demo;
 
-/**
- *
- * @author knl
- */
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HelloSpringApp {
@@ -25,9 +16,18 @@ public class HelloSpringApp {
 		// call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
 		
+		// let's call our new method for fortunes
+		System.out.println(theCoach.getDailyFortune());
+		
 		// close the context
 		context.close();
 	}
 
 }
+
+
+
+
+
+
 
