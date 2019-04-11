@@ -18,6 +18,11 @@ public class HelloSpringApp {
 		
 		// let's call our new method for fortunes
 		System.out.println(theCoach.getDailyFortune());
+                
+                Coach s = context.getBean("e", Coach.class);
+                
+               //   Employee s=(Employee)factory.getBean("e");  
+                       s.show(); 
 		
 		// close the context
 		context.close();

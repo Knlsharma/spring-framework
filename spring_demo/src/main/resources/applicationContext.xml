@@ -21,6 +21,12 @@
  		<!-- set up constructor injection -->
  		<constructor-arg ref="myFortuneService" />
  	</bean>
+        
+        
+        <bean id="e" class="com.mycompany.spring_demo.Employee">  
+         <constructor-arg value="10"></constructor-arg>  
+         <constructor-arg value="Kunal"></constructor-arg>  
+</bean>  
     
 </beans>
 

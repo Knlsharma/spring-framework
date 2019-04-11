@@ -22,6 +22,11 @@ public class TrackCoach implements Coach {
 		return "Just Do It: " + fortuneService.getFortune();
 	}
 
+    @Override
+    public void show() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
 
 

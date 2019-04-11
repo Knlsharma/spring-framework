@@ -20,6 +20,11 @@ public class BaseballCoach implements Coach {
 		// use my fortuneService to get a fortune		
 		return fortuneService.getFortune();
 	}
+
+    @Override
+    public void show() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 
 
