@@ -1,6 +1,6 @@
 package com.mycompany.spring_demo;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;  
 
 public class HelloSpringApp {
 
@@ -21,8 +21,12 @@ public class HelloSpringApp {
                 
                 Coach s = context.getBean("e", Coach.class);
                 
-               //   Employee s=(Employee)factory.getBean("e");  
+                  Employee s=(Employee)factory.getBean("e");  
                        s.show(); 
+                       
+                       Coach k = context.getBean("obj", Coach.class);
+                       k.display();
+                       
 		
 		// close the context
 		context.close();

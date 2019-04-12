@@ -8,4 +8,6 @@ public interface Coach {
         
         public void show();
 
+    public void display();
+
 }

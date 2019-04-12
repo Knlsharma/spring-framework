@@ -27,6 +27,20 @@
          <constructor-arg value="10"></constructor-arg>  
          <constructor-arg value="Kunal"></constructor-arg>  
 </bean>  
+
+
+ <bean id="obj" class="com.mycompany.spring_demo.Person">  
+<property name="phone">  
+<value>20</value>  
+</property>  
+ <property name="name">  
+<value>Arun</value>  
+</property>  
+<property name="address">  
+<value>ghaziabad</value>  
+</property>  
+  
+</bean>  
     
 </beans>
 
