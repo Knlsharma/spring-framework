@@ -7,42 +7,55 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	
+    
+    <!-- Load properties file -->
+	<context:property-placeholder location="sport.properties"/>
+        
     <!-- Define your beans here -->
     
     <!-- define the dependency -->
-    <bean id="myFortuneService"
+        <bean id="myFortuneService"
     		class="com.mycompany.spring_demo.HappyFortuneService">
     	</bean>
     
  	<bean id="myCoach"
  		class="com.mycompany.spring_demo.TrackCoach">	
  		
- 		<!-- set up constructor injection -->
+ 		<!-- set up constructor injection  1 st way -->
  		<constructor-arg ref="myFortuneService" />
  	</bean>
         
-        
+        <!-- set up constructor injection  2nd way -->
         <bean id="e" class="com.mycompany.spring_demo.Employee">  
          <constructor-arg value="10"></constructor-arg>  
          <constructor-arg value="Kunal"></constructor-arg>  
-</bean>  
+        </bean>  
 
 
- <bean id="obj" class="com.mycompany.spring_demo.Person">  
-<property name="phone">  
-<value>20</value>  
-</property>  
- <property name="name">  
-<value>Arun</value>  
-</property>  
-<property name="address">  
-<value>ghaziabad</value>  
-</property>  
+    <bean id="obj" class="com.mycompany.spring_demo.Person">  
+    <property name="phone">  
+    <value>20</value>  
+    </property>  
+     <property name="name">  
+    <value>Arun</value>  
+    </property>  
+    <property name="address">  
+    <value>ghaziabad</value>  
+    </property>  
   
-</bean>  
+    </bean>  
+
+    <bean id="ck" class="com.mycompany.spring_demo.Employee">
+        <property name="name" value="${email1}" /> 
+            <property name="id" value ="${team1}" />
     
-</beans>
+    
+      
+    
+    
+    </bean>
+
+    </beans>
 
 
 

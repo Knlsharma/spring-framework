@@ -12,22 +12,26 @@ public class HelloSpringApp {
 				
 		// retrieve bean from spring container
 		Coach theCoach = context.getBean("myCoach", Coach.class);
-		
+		  
 		// call methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
 		
 		// let's call our new method for fortunes
 		System.out.println(theCoach.getDailyFortune());
+               
                 
-                Coach s = context.getBean("e", Coach.class);
                 
-                  Employee s=(Employee)factory.getBean("e");  
-                       s.show(); 
+                    Coach s = context.getBean("ck", Employee.class);
+                
+            //      Employee s=(Employee)factory.getBean("e");  
+                       s.getDailyWorkout();
+                       s.show();
+                       s.getDailyFortune();
                        
-                       Coach k = context.getBean("obj", Coach.class);
+                       Person k = context.getBean("obj", Person.class);
                        k.display();
                        
-		
+		 
 		// close the context
 		context.close();
 	}

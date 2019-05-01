@@ -14,12 +14,16 @@ public class Employee implements Coach {
 private int id;  
 private String name;  
   
+
+
 public Employee()
 {System.out.println("def cons");}  
   
 public Employee(int id)
 {this.id = id;}  
   
+ 
+
 public Employee(String name) 
 {  this.name = name;}  
   
@@ -35,12 +39,12 @@ public void show(){
 
     @Override
     public String getDailyWorkout() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "Hi daily work"; //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public String getDailyFortune() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "Hi daily fortune"; //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

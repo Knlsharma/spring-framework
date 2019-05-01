@@ -5,7 +5,7 @@ public class TrackCoach implements Coach {
 	private FortuneService fortuneService;
 
 	public TrackCoach() {
-		
+		System.out.println("Inside Track Coach");
 	}
 	
 	public TrackCoach(FortuneService fortuneService) {
